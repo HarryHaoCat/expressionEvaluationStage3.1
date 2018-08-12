@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MaxSize 1
+#define MaxSize 100
 typedef char ElemType;
 typedef double ElemTypeDouble;
 typedef enum state {FAILED, SUCCEEDED} State;   // State for stack operation

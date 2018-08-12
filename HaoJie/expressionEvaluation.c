@@ -437,13 +437,6 @@ char next(char* infixExpression, int index){
 //Mark the location of error.
 void printError(char* infixExpression, int index){
 	printf("\"");
-	/*for(int i = 0; i < index; i++)
-        printf("%c", infixExpression[i]);
-    //Mark the location of error
-    printf("\e[40;37m%c\e[0m", infixExpression[index]);    
-    while(infixExpression[++index] != '\0')
-        printf("%c",infixExpression[index]);
-    printf("\"\n");*/
     printf("%s",infixExpression);
     printf("\"\n");
     int i = 0;

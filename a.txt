@@ -1,0 +1,2086 @@
+----***   The followings are tests for PROPER prefix expressions.    ***---
+
+---------------------***   Test 1    ***------------------------
+
+The infix expression:23+(58-41+33-25*8/4/2*12/3)/(49+1)
+The postfix expression:23#58#41#-33#+25#8#*4#/2#/12#*3#/-49#1#+/+
+The value of the expression:22
+
+----------------------------------------------------------------
+
+---------------------***   Test 2    ***------------------------
+
+The infix expression:2-(5+5*4+3*2-1)/(27+3*1)
+The postfix expression:2#5#5#4#*+3#2#*+1#-27#3#1#*+/-
+The value of the expression:1
+
+----------------------------------------------------------------
+
+---------------------***   Test 3    ***------------------------
+
+The infix expression:4*3+(10*4+6*2+8)/(52-2+10)-2
+The postfix expression:4#3#*10#4#*6#2#*+8#+52#2#-10#+/+2#-
+The value of the expression:11
+
+----------------------------------------------------------------
+
+---------------------***   Test 4    ***------------------------
+
+The infix expression:3/2
+The postfix expression:3#2#/
+The value of the expression:1.5
+
+----------------------------------------------------------------
+
+---------------------***   Test 5    ***------------------------
+
+The infix expression:4 * 3 + ( 10 * 4 + 6 * 2 + 8) / ( 52       - 2 + 10 ) - 2
+The postfix expression:4#3#*10#4#*6#2#*+8#+52#2#-10#+/+2#-
+The value of the expression:11
+
+----------------------------------------------------------------
+
+---------------------***   Test 6    ***------------------------
+
+The infix expression:5
+The postfix expression:5#
+The value of the expression:5
+
+----------------------------------------------------------------
+
+---------------------***   Test 7    ***------------------------
+
+The infix expression: 62 
+The postfix expression:62#
+The value of the expression:62
+
+----------------------------------------------------------------
+
+---------------------***   Test 8    ***------------------------
+
+The infix expression:(5)
+The postfix expression:5#
+The value of the expression:5
+
+----------------------------------------------------------------
+
+---------------------***   Test 9    ***------------------------
+
+The infix expression: ( 62  )
+The postfix expression:62#
+The value of the expression:62
+
+----------------------------------------------------------------
+
+---------------------***   Test 10    ***------------------------
+
+The infix expression:23 + ( 58 -41 + 33 -25 *4)/ (49 + 1)
+The postfix expression:23#58#41#-33#+25#4#*-49#1#+/+
+The value of the expression:22
+
+----------------------------------------------------------------
+
+---------------------***   Test 11    ***------------------------
+
+The infix expression:  -5 
+The postfix expression:5#$
+The value of the expression:-5
+
+----------------------------------------------------------------
+
+---------------------***   Test 12    ***------------------------
+
+The infix expression:  +5   
+The postfix expression:5#@
+The value of the expression:5
+
+----------------------------------------------------------------
+
+---------------------***   Test 13    ***------------------------
+
+The infix expression:-(-5)
+The postfix expression:5#$$
+The value of the expression:5
+
+----------------------------------------------------------------
+
+---------------------***   Test 14    ***------------------------
+
+The infix expression:-(3)
+The postfix expression:3#$
+The value of the expression:-3
+
+----------------------------------------------------------------
+
+---------------------***   Test 15    ***------------------------
+
+The infix expression:+(-5)
+The postfix expression:5#$@
+The value of the expression:-5
+
+----------------------------------------------------------------
+
+---------------------***   Test 16    ***------------------------
+
+The infix expression:-(+3)
+The postfix expression:3#@$
+The value of the expression:-3
+
+----------------------------------------------------------------
+
+---------------------***   Test 17    ***------------------------
+
+The infix expression:1+2-(6 ) 
+The postfix expression:1#2#+6#-
+The value of the expression:-3
+
+----------------------------------------------------------------
+
+---------------------***   Test 18    ***------------------------
+
+The infix expression: +1+2+(6 ) 
+The postfix expression:1#@2#+6#+
+The value of the expression:9
+
+----------------------------------------------------------------
+
+---------------------***   Test 19    ***------------------------
+
+The infix expression: +1+   2-(6 ) 
+The postfix expression:1#@2#+6#-
+The value of the expression:-3
+
+----------------------------------------------------------------
+
+---------------------***   Test 20    ***------------------------
+
+The infix expression:   +1+2*(6 ) 
+The postfix expression:1#@2#6#*+
+The value of the expression:13
+
+----------------------------------------------------------------
+
+---------------------***   Test 21    ***------------------------
+
+The infix expression:  +1+2 /(6 ) 
+The postfix expression:1#@2#6#/+
+The value of the expression:1.33333
+
+----------------------------------------------------------------
+
+---------------------***   Test 22    ***------------------------
+
+The infix expression:+5+(3)
+The postfix expression:5#@3#+
+The value of the expression:8
+
+----------------------------------------------------------------
+
+---------------------***   Test 23    ***------------------------
+
+The infix expression:+5-(3)
+The postfix expression:5#@3#-
+The value of the expression:2
+
+----------------------------------------------------------------
+
+---------------------***   Test 24    ***------------------------
+
+The infix expression:+5*(3)
+The postfix expression:5#@3#*
+The value of the expression:15
+
+----------------------------------------------------------------
+
+---------------------***   Test 25    ***------------------------
+
+The infix expression:+5/(3)
+The postfix expression:5#@3#/
+The value of the expression:1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 26    ***------------------------
+
+The infix expression:-5+(3)
+The postfix expression:5#$3#+
+The value of the expression:-2
+
+----------------------------------------------------------------
+
+---------------------***   Test 27    ***------------------------
+
+The infix expression:-5-(3)
+The postfix expression:5#$3#-
+The value of the expression:-8
+
+----------------------------------------------------------------
+
+---------------------***   Test 28    ***------------------------
+
+The infix expression:-5*(3)
+The postfix expression:5#$3#*
+The value of the expression:-15
+
+----------------------------------------------------------------
+
+---------------------***   Test 29    ***------------------------
+
+The infix expression:-5/(3)
+The postfix expression:5#$3#/
+The value of the expression:-1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 30    ***------------------------
+
+The infix expression:+5+(+3)
+The postfix expression:5#@3#@+
+The value of the expression:8
+
+----------------------------------------------------------------
+
+---------------------***   Test 31    ***------------------------
+
+The infix expression:+5-(+3)
+The postfix expression:5#@3#@-
+The value of the expression:2
+
+----------------------------------------------------------------
+
+---------------------***   Test 32    ***------------------------
+
+The infix expression:+5*(+3)
+The postfix expression:5#@3#@*
+The value of the expression:15
+
+----------------------------------------------------------------
+
+---------------------***   Test 33    ***------------------------
+
+The infix expression:+5/(+3)
+The postfix expression:5#@3#@/
+The value of the expression:1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 34    ***------------------------
+
+The infix expression:-5+(    -3)
+The postfix expression:5#$3#$+
+The value of the expression:-8
+
+----------------------------------------------------------------
+
+---------------------***   Test 35    ***------------------------
+
+The infix expression:-5-(   -3)
+The postfix expression:5#$3#$-
+The value of the expression:-2
+
+----------------------------------------------------------------
+
+---------------------***   Test 36    ***------------------------
+
+The infix expression:-5*( -3)
+The postfix expression:5#$3#$*
+The value of the expression:15
+
+----------------------------------------------------------------
+
+---------------------***   Test 37    ***------------------------
+
+The infix expression:-5/(   -3)
+The postfix expression:5#$3#$/
+The value of the expression:1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 38    ***------------------------
+
+The infix expression:3+( -5)
+The postfix expression:3#5#$+
+The value of the expression:-2
+
+----------------------------------------------------------------
+
+---------------------***   Test 39    ***------------------------
+
+The infix expression:08
+The postfix expression:08#
+The value of the expression:8
+
+----------------------------------------------------------------
+
+---------------------***   Test 40    ***------------------------
+
+The infix expression: -5 / (-3) + (-6/2)*3  
+The postfix expression:5#$3#$/6#$2#/3#*+
+The value of the expression:-7.33333
+
+----------------------------------------------------------------
+
+---------------------***   Test 41    ***------------------------
+
+The infix expression: -5 / ((+3*2) /(-1)- (-6/2)*3 ) 
+The postfix expression:5#$3#@2#*1#$/6#$2#/3#*-/
+The value of the expression:-1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 42    ***------------------------
+
+The infix expression:((((((((((3+1+1+1+1+1+1*3*5/6))))))))))/3+1   
+The postfix expression:3#1#+1#+1#+1#+1#+1#3#*5#*6#/+3#/1#+
+The value of the expression:4.5
+
+----------------------------------------------------------------
+
+---------------------***   Test 43    ***------------------------
+
+The infix expression:( ((+18))*10  )   /      2
+The postfix expression:18#@10#*2#/
+The value of the expression:90
+
+----------------------------------------------------------------
+
+---------------------***   Test 44    ***------------------------
+
+The infix expression:-1200/(((12*((-12))/   12)))
+The postfix expression:1200#$12#12#$*12#//
+The value of the expression:100
+
+----------------------------------------------------------------
+
+---------------------***   Test 45    ***------------------------
+
+The infix expression:(9+8)*(3-2)
+The postfix expression:9#8#+3#2#-*
+The value of the expression:17
+
+----------------------------------------------------------------
+
+---------------------***   Test 46    ***------------------------
+
+The infix expression:(-2+9)/(8)
+The postfix expression:2#$9#+8#/
+The value of the expression:0.875
+
+----------------------------------------------------------------
+
+---------------------***   Test 47    ***------------------------
+
+The infix expression:-(1 -5/(-1)*(+1) + (-16))
+The postfix expression:1#5#1#$/1#@*-16#$+$
+The value of the expression:10
+
+----------------------------------------------------------------
+
+---------------------***   Test 48    ***------------------------
+
+The infix expression:-(3*999+(((+2)*(-3))))
+The postfix expression:3#999#*2#@3#$*+$
+The value of the expression:-2991
+
+----------------------------------------------------------------
+
+---------------------***   Test 49    ***------------------------
+
+The infix expression:-(       5*(  -3))
+The postfix expression:5#3#$*$
+The value of the expression:15
+
+----------------------------------------------------------------
+
+---------------------***   Test 50    ***------------------------
+
+The infix expression:(((-4)+3)*6)
+The postfix expression:4#$3#+6#*
+The value of the expression:-6
+
+----------------------------------------------------------------
+
+---------------------***   Test 51    ***------------------------
+
+The infix expression:+2*4+(2/3) 
+The postfix expression:2#@4#*2#3#/+
+The value of the expression:8.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 52    ***------------------------
+
+The infix expression:(8*2) / (3+2)
+The postfix expression:8#2#*3#2#+/
+The value of the expression:3.2
+
+----------------------------------------------------------------
+
+-----***   End of tests for PROPER prefix expressions.    ***-----
+
+
+----***   The followings are tests for IMPROPER prefix expressions.    ***---
+
+---------------------***   Test 1    ***------------------------
+
+The infix expression:
+<Error! The input is empty>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 2    ***------------------------
+
+The infix expression: 
+<Error! The input is empty>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 3    ***------------------------
+
+The infix expression:  
+<Error! The input is empty>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 4    ***------------------------
+
+The infix expression:      
+<Error! The input is empty>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 5    ***------------------------
+
+The infix expression: 6 2 
+" 6 2 "
+   ^
+<Error! A space between two operands>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 6    ***------------------------
+
+The infix expression: + 
+" + "
+   ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 7    ***------------------------
+
+The infix expression: 6 * 3 - 
+" 6 * 3 - "
+        ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 8    ***------------------------
+
+The infix expression: 6+4*2/ 
+" 6+4*2/ "
+       ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 9    ***------------------------
+
+The infix expression: 6++4*2/ 
+" 6++4*2/ "
+   ^
+<Error! Operator '+'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 10    ***------------------------
+
+The infix expression: 6+-4*2/ 
+" 6+-4*2/ "
+   ^
+<Error! Operator '-'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 11    ***------------------------
+
+The infix expression: 5) 
+" 5) "
+   ^
+<Error! No matched '(' before ')'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 12    ***------------------------
+
+The infix expression: ( 62   
+" ( 62   "
+        ^
+<Error! No matched ')' after '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 13    ***------------------------
+
+The infix expression: ) 713 (   
+" ) 713 (   "
+  ^
+<Error! No matched '(' before ')'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 14    ***------------------------
+
+The infix expression: a 
+" a "
+  ^
+<Error! Illegal character 'a' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 15    ***------------------------
+
+The infix expression: 5 + b   
+" 5 + b   "
+      ^
+<Error! Illegal character 'b' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 16    ***------------------------
+
+The infix expression: 3 x 4 + 5   
+" 3 x 4 + 5   "
+    ^
+<Error! Illegal character 'x' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 17    ***------------------------
+
+The infix expression:  - 5 
+"  - 5 "
+    ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 18    ***------------------------
+
+The infix expression:  + 5   
+"  + 5   "
+    ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 19    ***------------------------
+
+The infix expression: - (-5) 
+" - (-5) "
+   ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 20    ***------------------------
+
+The infix expression: - (+3) 
+" - (+3) "
+   ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 21    ***------------------------
+
+The infix expression:  --5 
+"  --5 "
+   ^
+<Error! Operator '-'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 22    ***------------------------
+
+The infix expression:  ++5   
+"  ++5   "
+   ^
+<Error! Operator '+'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 23    ***------------------------
+
+The infix expression:( )
+"( )"
+ ^
+<Error! No expression in the braces>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 24    ***------------------------
+
+The infix expression:-1 + 5/( +2 + 3*4/12 -3)
+The postfix expression:1#$5#2#@3#4#*12#/+3#-/+
+"1#$5#2#@3#4#*12#/+3#-/+"
+                      ^
+<Error! Some operand is divided by zero in the expression>
+Sorry, we can't evaluate such a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 25    ***------------------------
+
+The infix expression:+
+"+"
+ ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 26    ***------------------------
+
+The infix expression:-
+"-"
+ ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 27    ***------------------------
+
+The infix expression:*
+"*"
+ ^
+<Error! Operator '*' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 28    ***------------------------
+
+The infix expression:/
+"/"
+ ^
+<Error! Operator '/' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 29    ***------------------------
+
+The infix expression:  * 5 
+"  * 5 "
+   ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 30    ***------------------------
+
+The infix expression:  /5 
+"  /5 "
+   ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 31    ***------------------------
+
+The infix expression: 3+( -  6)
+" 3+( -  6)"
+       ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 32    ***------------------------
+
+The infix expression:6(5+2)
+"6(5+2)"
+  ^
+<Error! No operator between operand and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 33    ***------------------------
+
+The infix expression:(5+2)  (8+5)
+"(5+2)  (8+5)"
+     ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 34    ***------------------------
+
+The infix expression:(1+2) (4+5)
+"(1+2) (4+5)"
+     ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 35    ***------------------------
+
+The infix expression:*7+3-2 
+"*7+3-2 "
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 36    ***------------------------
+
+The infix expression:  7+3-2*
+"  7+3-2*"
+        ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 37    ***------------------------
+
+The infix expression:  (5+6)-(7+8)+(
+"  (5+6)-(7+8)+("
+               ^
+<Error! No matched ')' after '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 38    ***------------------------
+
+The infix expression: 2 ((3+2))
+" 2 ((3+2))"
+    ^
+<Error! No operator between operand and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 39    ***------------------------
+
+The infix expression: (1+4)(3*7)
+" (1+4)(3*7)"
+      ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 40    ***------------------------
+
+The infix expression:( ((8+8))10  )
+"( ((8+8))10  )"
+         ^
+<Error! No operator between ')' and operand>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 41    ***------------------------
+
+The infix expression:8+(+)
+"8+(+)"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 42    ***------------------------
+
+The infix expression:8+( )
+"8+( )"
+   ^
+<Error! No expression in the braces>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 43    ***------------------------
+
+The infix expression:(9+8)9
+"(9+8)9"
+     ^
+<Error! No operator between ')' and operand>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 44    ***------------------------
+
+The infix expression:  (1*9+50-5)(5*6) 
+"  (1*9+50-5)(5*6) "
+            ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 45    ***------------------------
+
+The infix expression:+(-5)*(-5*   -963)
+"+(-5)*(-5*   -963)"
+          ^
+<Error! Operator '-'  follows another operator '*' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 46    ***------------------------
+
+The infix expression:  +5+6-(7+  1(   +6 ))   
+"  +5+6-(7+  1(   +6 ))   "
+              ^
+<Error! No operator between operand and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 47    ***------------------------
+
+The infix expression:(4-3)(8*(-2))
+"(4-3)(8*(-2))"
+     ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 48    ***------------------------
+
+The infix expression:8(  )
+"8(  )"
+  ^
+<Error! No operator between operand and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 49    ***------------------------
+
+The infix expression:-(5*(      - 3))
+"-(5*(      - 3))"
+             ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 50    ***------------------------
+
+The infix expression:(8*2)  (3+2)
+"(8*2)  (3+2)"
+     ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 51    ***------------------------
+
+The infix expression:9+(*9)    9
+"9+(*9)    9"
+    ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 52    ***------------------------
+
+The infix expression:(2) 911
+"(2) 911"
+   ^
+<Error! No operator between ')' and operand>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+-----***   End of tests for IMPROPER prefix expressions.    ***-----
+
+
+----***   The followings are tests for NEW PROPER prefix expressions.    ***---
+
+---------------------***   Test 1    ***------------------------
+
+The infix expression:7 *(5+6)
+The postfix expression:7#5#6#+*
+The value of the expression:77
+
+----------------------------------------------------------------
+
+---------------------***   Test 2    ***------------------------
+
+The infix expression:( 5 ) / (7)
+The postfix expression:5#7#/
+The value of the expression:0.714286
+
+----------------------------------------------------------------
+
+---------------------***   Test 3    ***------------------------
+
+The infix expression:(34)
+The postfix expression:34#
+The value of the expression:34
+
+----------------------------------------------------------------
+
+---------------------***   Test 4    ***------------------------
+
+The infix expression:((8))
+The postfix expression:8#
+The value of the expression:8
+
+----------------------------------------------------------------
+
+---------------------***   Test 5    ***------------------------
+
+The infix expression:(+7)
+The postfix expression:7#@
+The value of the expression:7
+
+----------------------------------------------------------------
+
+---------------------***   Test 6    ***------------------------
+
+The infix expression:(-8)
+The postfix expression:8#$
+The value of the expression:-8
+
+----------------------------------------------------------------
+
+---------------------***   Test 7    ***------------------------
+
+The infix expression:(8*9)
+The postfix expression:8#9#*
+The value of the expression:72
+
+----------------------------------------------------------------
+
+---------------------***   Test 8    ***------------------------
+
+The infix expression:(1/4)
+The postfix expression:1#4#/
+The value of the expression:0.25
+
+----------------------------------------------------------------
+
+---------------------***   Test 9    ***------------------------
+
+The infix expression:+4+5
+The postfix expression:4#@5#+
+The value of the expression:9
+
+----------------------------------------------------------------
+
+---------------------***   Test 10    ***------------------------
+
+The infix expression:+4-3
+The postfix expression:4#@3#-
+The value of the expression:1
+
+----------------------------------------------------------------
+
+---------------------***   Test 11    ***------------------------
+
+The infix expression:+5*2
+The postfix expression:5#@2#*
+The value of the expression:10
+
+----------------------------------------------------------------
+
+---------------------***   Test 12    ***------------------------
+
+The infix expression:+4/3
+The postfix expression:4#@3#/
+The value of the expression:1.33333
+
+----------------------------------------------------------------
+
+---------------------***   Test 13    ***------------------------
+
+The infix expression:-2+3
+The postfix expression:2#$3#+
+The value of the expression:1
+
+----------------------------------------------------------------
+
+---------------------***   Test 14    ***------------------------
+
+The infix expression:-2-5
+The postfix expression:2#$5#-
+The value of the expression:-7
+
+----------------------------------------------------------------
+
+---------------------***   Test 15    ***------------------------
+
+The infix expression:-2*6
+The postfix expression:2#$6#*
+The value of the expression:-12
+
+----------------------------------------------------------------
+
+---------------------***   Test 16    ***------------------------
+
+The infix expression:-3/8
+The postfix expression:3#$8#/
+The value of the expression:-0.375
+
+----------------------------------------------------------------
+
+---------------------***   Test 17    ***------------------------
+
+The infix expression:2*3+5
+The postfix expression:2#3#*5#+
+The value of the expression:11
+
+----------------------------------------------------------------
+
+---------------------***   Test 18    ***------------------------
+
+The infix expression:2*3-5
+The postfix expression:2#3#*5#-
+The value of the expression:1
+
+----------------------------------------------------------------
+
+---------------------***   Test 19    ***------------------------
+
+The infix expression:2*3*4
+The postfix expression:2#3#*4#*
+The value of the expression:24
+
+----------------------------------------------------------------
+
+---------------------***   Test 20    ***------------------------
+
+The infix expression:2*3/60
+The postfix expression:2#3#*60#/
+The value of the expression:0.1
+
+----------------------------------------------------------------
+
+---------------------***   Test 21    ***------------------------
+
+The infix expression:2/4+5
+The postfix expression:2#4#/5#+
+The value of the expression:5.5
+
+----------------------------------------------------------------
+
+---------------------***   Test 22    ***------------------------
+
+The infix expression:20/4*5
+The postfix expression:20#4#/5#*
+The value of the expression:25
+
+----------------------------------------------------------------
+
+---------------------***   Test 23    ***------------------------
+
+The infix expression:20/4/4
+The postfix expression:20#4#/4#/
+The value of the expression:1.25
+
+----------------------------------------------------------------
+
+---------------------***   Test 24    ***------------------------
+
+The infix expression:(2+3)
+The postfix expression:2#3#+
+The value of the expression:5
+
+----------------------------------------------------------------
+
+---------------------***   Test 25    ***------------------------
+
+The infix expression:(2-3)
+The postfix expression:2#3#-
+The value of the expression:-1
+
+----------------------------------------------------------------
+
+---------------------***   Test 26    ***------------------------
+
+The infix expression:(2*3)
+The postfix expression:2#3#*
+The value of the expression:6
+
+----------------------------------------------------------------
+
+---------------------***   Test 27    ***------------------------
+
+The infix expression:(2/3)
+The postfix expression:2#3#/
+The value of the expression:0.666667
+
+----------------------------------------------------------------
+
+---------------------***   Test 28    ***------------------------
+
+The infix expression:(3) -89
+The postfix expression:3#89#-
+The value of the expression:-86
+
+----------------------------------------------------------------
+
+---------------------***   Test 29    ***------------------------
+
+The infix expression:6 +9
+The postfix expression:6#9#+
+The value of the expression:15
+
+----------------------------------------------------------------
+
+---------------------***   Test 30    ***------------------------
+
+The infix expression:0068
+The postfix expression:0068#
+The value of the expression:68
+
+----------------------------------------------------------------
+
+---------------------***   Test 31    ***------------------------
+
+The infix expression:1+2+3
+The postfix expression:1#2#+3#+
+The value of the expression:6
+
+----------------------------------------------------------------
+
+---------------------***   Test 32    ***------------------------
+
+The infix expression:1+2-3
+The postfix expression:1#2#+3#-
+The value of the expression:0
+
+----------------------------------------------------------------
+
+---------------------***   Test 33    ***------------------------
+
+The infix expression:1+2*3
+The postfix expression:1#2#3#*+
+The value of the expression:7
+
+----------------------------------------------------------------
+
+---------------------***   Test 34    ***------------------------
+
+The infix expression:1+2/3
+The postfix expression:1#2#3#/+
+The value of the expression:1.66667
+
+----------------------------------------------------------------
+
+---------------------***   Test 35    ***------------------------
+
+The infix expression:((5))
+The postfix expression:5#
+The value of the expression:5
+
+----------------------------------------------------------------
+
+-----***   End of tests for NEW PROPER prefix expressions.    ***-----
+
+
+----***   The followings are tests for NEW IMPROPER prefix expressions.    ***---
+
+---------------------***   Test 1    ***------------------------
+
+The infix expression:7 (5+6)
+"7 (5+6)"
+   ^
+<Error! No operator between operand and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 2    ***------------------------
+
+The infix expression:( 5 ) (7)
+"( 5 ) (7)"
+     ^
+<Error! No operator between ')' and '('>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 3    ***------------------------
+
+The infix expression:()
+"()"
+ ^
+<Error! No expression in the braces>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 4    ***------------------------
+
+The infix expression:(8))
+"(8))"
+    ^
+<Error! No matched '(' before ')'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 5    ***------------------------
+
+The infix expression:79)
+"79)"
+   ^
+<Error! No matched '(' before ')'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 6    ***------------------------
+
+The infix expression:+)
+"+)"
+ ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 7    ***------------------------
+
+The infix expression:-)
+"-)"
+ ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 8    ***------------------------
+
+The infix expression:*)
+"*)"
+ ^
+<Error! Operator '*' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 9    ***------------------------
+
+The infix expression:7*)
+"7*)"
+  ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 10    ***------------------------
+
+The infix expression:/)
+"/)"
+ ^
+<Error! Operator '/' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 11    ***------------------------
+
+The infix expression:8/)
+"8/)"
+  ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 12    ***------------------------
+
+The infix expression:++
+"++"
+ ^
+<Error! Operator '+'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 13    ***------------------------
+
+The infix expression:1++
+"1++"
+  ^
+<Error! Operator '+'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 14    ***------------------------
+
+The infix expression:+2+
+"+2+"
+   ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 15    ***------------------------
+
+The infix expression:1+2+
+"1+2+"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 16    ***------------------------
+
+The infix expression:+-
+"+-"
+ ^
+<Error! Operator '-'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 17    ***------------------------
+
+The infix expression:1+-
+"1+-"
+  ^
+<Error! Operator '-'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 18    ***------------------------
+
+The infix expression:+2-
+"+2-"
+   ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 19    ***------------------------
+
+The infix expression:1+2-
+"1+2-"
+    ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 20    ***------------------------
+
+The infix expression:+*
+"+*"
+ ^
+<Error! Operator '*'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 21    ***------------------------
+
+The infix expression:1+*
+"1+*"
+  ^
+<Error! Operator '*'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 22    ***------------------------
+
+The infix expression:+2*
+"+2*"
+   ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 23    ***------------------------
+
+The infix expression:1+2*
+"1+2*"
+    ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 24    ***------------------------
+
+The infix expression:+/
+"+/"
+ ^
+<Error! Operator '/'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 25    ***------------------------
+
+The infix expression:1+/
+"1+/"
+  ^
+<Error! Operator '/'  follows another operator '+' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 26    ***------------------------
+
+The infix expression:+2/
+"+2/"
+   ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 27    ***------------------------
+
+The infix expression:1+2/
+"1+2/"
+    ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 28    ***------------------------
+
+The infix expression:-+
+"-+"
+ ^
+<Error! Operator '+'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 29    ***------------------------
+
+The infix expression:1-+
+"1-+"
+  ^
+<Error! Operator '+'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 30    ***------------------------
+
+The infix expression:-2+
+"-2+"
+   ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 31    ***------------------------
+
+The infix expression:1-2+
+"1-2+"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 32    ***------------------------
+
+The infix expression:--
+"--"
+ ^
+<Error! Operator '-'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 33    ***------------------------
+
+The infix expression:1--
+"1--"
+  ^
+<Error! Operator '-'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 34    ***------------------------
+
+The infix expression:-2-
+"-2-"
+   ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 35    ***------------------------
+
+The infix expression:1-2-
+"1-2-"
+    ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 36    ***------------------------
+
+The infix expression:-*
+"-*"
+ ^
+<Error! Operator '*'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 37    ***------------------------
+
+The infix expression:1-*
+"1-*"
+  ^
+<Error! Operator '*'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 38    ***------------------------
+
+The infix expression:-2*
+"-2*"
+   ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 39    ***------------------------
+
+The infix expression:1-2*
+"1-2*"
+    ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 40    ***------------------------
+
+The infix expression:-/
+"-/"
+ ^
+<Error! Operator '/'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 41    ***------------------------
+
+The infix expression:1-/
+"1-/"
+  ^
+<Error! Operator '/'  follows another operator '-' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 42    ***------------------------
+
+The infix expression:-2/
+"-2/"
+   ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 43    ***------------------------
+
+The infix expression:1-2/
+"1-2/"
+    ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 44    ***------------------------
+
+The infix expression:*+
+"*+"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 45    ***------------------------
+
+The infix expression:1*+
+"1*+"
+  ^
+<Error! Operator '+'  follows another operator '*' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 46    ***------------------------
+
+The infix expression:*2+
+"*2+"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 47    ***------------------------
+
+The infix expression:1*2+
+"1*2+"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 48    ***------------------------
+
+The infix expression:*-
+"*-"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 49    ***------------------------
+
+The infix expression:1*-
+"1*-"
+  ^
+<Error! Operator '-'  follows another operator '*' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 50    ***------------------------
+
+The infix expression:*2-
+"*2-"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 51    ***------------------------
+
+The infix expression:1*2-
+"1*2-"
+    ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 52    ***------------------------
+
+The infix expression:**
+"**"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 53    ***------------------------
+
+The infix expression:1**
+"1**"
+  ^
+<Error! Operator '*'  follows another operator '*' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 54    ***------------------------
+
+The infix expression:*2*
+"*2*"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 55    ***------------------------
+
+The infix expression:1*2*
+"1*2*"
+    ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 56    ***------------------------
+
+The infix expression:*/
+"*/"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 57    ***------------------------
+
+The infix expression:1*/
+"1*/"
+  ^
+<Error! Operator '/'  follows another operator '*' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 58    ***------------------------
+
+The infix expression:*2/
+"*2/"
+ ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 59    ***------------------------
+
+The infix expression:1*2/
+"1*2/"
+    ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 60    ***------------------------
+
+The infix expression:/+
+"/+"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 61    ***------------------------
+
+The infix expression:5/+
+"5/+"
+  ^
+<Error! Operator '+'  follows another operator '/' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 62    ***------------------------
+
+The infix expression:/6+
+"/6+"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 63    ***------------------------
+
+The infix expression:5/6+
+"5/6+"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 64    ***------------------------
+
+The infix expression:/-
+"/-"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 65    ***------------------------
+
+The infix expression:6/-
+"6/-"
+  ^
+<Error! Operator '-'  follows another operator '/' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 66    ***------------------------
+
+The infix expression:/7-
+"/7-"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 67    ***------------------------
+
+The infix expression:6/7-
+"6/7-"
+    ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 68    ***------------------------
+
+The infix expression:/*
+"/*"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 69    ***------------------------
+
+The infix expression:7/*
+"7/*"
+  ^
+<Error! Operator '*'  follows another operator '/' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 70    ***------------------------
+
+The infix expression:/8*
+"/8*"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 71    ***------------------------
+
+The infix expression:7/8*
+"7/8*"
+    ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 72    ***------------------------
+
+The infix expression://
+"//"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 73    ***------------------------
+
+The infix expression:8//
+"8//"
+  ^
+<Error! Operator '/'  follows another operator '/' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 74    ***------------------------
+
+The infix expression:/9/
+"/9/"
+ ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 75    ***------------------------
+
+The infix expression:8/9/
+"8/9/"
+    ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 76    ***------------------------
+
+The infix expression:(+ 
+"(+ "
+   ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 77    ***------------------------
+
+The infix expression:+(+ 
+"+(+ "
+    ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 78    ***------------------------
+
+The infix expression:-(+ 
+"-(+ "
+    ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 79    ***------------------------
+
+The infix expression:(-
+"(-"
+  ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 80    ***------------------------
+
+The infix expression:+(-
+"+(-"
+   ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 81    ***------------------------
+
+The infix expression:-(-
+"-(-"
+   ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 82    ***------------------------
+
+The infix expression:(*
+"(*"
+  ^
+<Error! Operator '*' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 83    ***------------------------
+
+The infix expression:+(*
+"+(*"
+   ^
+<Error! Operator '*' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 84    ***------------------------
+
+The infix expression:-(*
+"-(*"
+   ^
+<Error! Operator '*' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 85    ***------------------------
+
+The infix expression:(/
+"(/"
+  ^
+<Error! Operator '/' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 86    ***------------------------
+
+The infix expression:+(/
+"+(/"
+   ^
+<Error! Operator '/' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 87    ***------------------------
+
+The infix expression:-(/
+"-(/"
+   ^
+<Error! Operator '/' without operands in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 88    ***------------------------
+
+The infix expression:) 89
+") 89"
+ ^
+<Error! No matched '(' before ')'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 89    ***------------------------
+
+The infix expression:+ ) 89
+"+ ) 89"
+  ^
+<Error! A space follows a unary '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 90    ***------------------------
+
+The infix expression:- ) 89
+"- ) 89"
+  ^
+<Error! A space follows a unary '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 91    ***------------------------
+
+The infix expression:6 9
+"6 9"
+  ^
+<Error! A space between two operands>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 92    ***------------------------
+
+The infix expression:+6 9
+"+6 9"
+   ^
+<Error! A space between two operands>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 93    ***------------------------
+
+The infix expression:-6 9
+"-6 9"
+   ^
+<Error! A space between two operands>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 94    ***------------------------
+
+The infix expression: *6 9
+" *6 9"
+  ^
+<Error! No operand before operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 95    ***------------------------
+
+The infix expression: /6 9
+" /6 9"
+  ^
+<Error! No operand before operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 96    ***------------------------
+
+The infix expression:Hello
+"Hello"
+ ^
+<Error! Illegal character 'H' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 97    ***------------------------
+
+The infix expression:1+2+
+"1+2+"
+    ^
+<Error! No operand after operator '+'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 98    ***------------------------
+
+The infix expression:1+2-
+"1+2-"
+    ^
+<Error! No operand after operator '-'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 99    ***------------------------
+
+The infix expression:1+2*
+"1+2*"
+    ^
+<Error! No operand after operator '*'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 100    ***------------------------
+
+The infix expression:1+2/
+"1+2/"
+    ^
+<Error! No operand after operator '/'>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+---------------------***   Test 101    ***------------------------
+
+The infix expression:
+""
+ ^
+<Error! Illegal character '' in the expression>
+Sorry, we can't turn such an infix expression to a postfix expression.
+----------------------------------------------------------------
+
+-----***   End of tests for NEW IMPROPER prefix expressions.    ***-----
+
+

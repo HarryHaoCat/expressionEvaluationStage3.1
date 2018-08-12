@@ -277,7 +277,15 @@ int main(int argc, const char * argv[]) {
         "1+2-",
         "1+2*",
         "1+2/",
-        "((5)"
+        //"(  (#"
+        "1\15+  3"
+        //"( 10*((((8)   )/((07)   -3))))"
+        //" 3 + 2+ 6    2a"
+        //" 3 + 2 + (   + 5"
+        //"-(-(-(-(-(1l)))))"
+        //"((5)",
+        //"( 10*((((8)   )/((07)   -3))))"
+
     };
     
     
@@ -352,7 +360,7 @@ int main(int argc, const char * argv[]) {
                 printf("Sorry, we can't evaluate such a postfix expression.\n");
         }
         else{
-            printf("Sorry, we can't turn such an infix expressin to a postfix expression.\n");
+            printf("Sorry, we can't turn such an infix expression to a postfix expression.\n");
         }
         printf("----------------------------------------------------------------\n\n");
     }
